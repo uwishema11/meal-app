@@ -24,6 +24,7 @@ const ruducer= (state,action)=>{
                 ...isExistedItem,
                 amount:isExistedItem.amount + parseInt(action.item.amount)
             }
+            
             updatedItems=[...state.items]
             state.items[existedItemIndex]=updatedItem 
         }

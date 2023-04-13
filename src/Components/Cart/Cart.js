@@ -14,6 +14,7 @@ const Cart =props =>{
 
     const addItemHandler= (item)=>{
         crtx.addItems({...item,amount:1})
+        console.log(item.amount)
     }
     const removeItemHsndler=(id)=>{
         crtx.removeItems(id)
